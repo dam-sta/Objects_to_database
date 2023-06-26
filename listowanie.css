@@ -1,0 +1,43 @@
+@-webkit-keyframes Border{
+    0% {border-color: blue;}
+    50% {border-color: crimson;}
+    100% {border-color: green;}
+}
+
+@-webkit-keyframes text{
+    0% {background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);}
+    50% {background-image: linear-gradient(to left, green, yellow, violet, blue, red, red, orange);}
+    100% {background-image: linear-gradient(to left, blue, yellow, green, blue, red, orange, violet);}
+}
+
+*{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.listowanie{
+    border: 2px solid;
+    margin-top: 2vmin;
+    padding: 1vmin;
+    margin: 2vmin 80vmin 0 80vmin;
+    border-radius: 1vmin;
+    -webkit-animation:Border 5s infinite alternate;
+}
+
+.cont{
+    display: flex;
+    margin-left: 82vmin;
+}
+
+a{
+    padding: 5vmin 0 0 10vmin;
+}
+
+h1{
+    -webkit-animation: text 5s infinite alternate;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}

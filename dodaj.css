@@ -1,0 +1,32 @@
+@-webkit-keyframes Border{
+    0% {border-color: blue;}
+    50% {border-color: crimson;}
+    100% {border-color: green;}
+}
+
+*{
+    background-color: black;
+    color: white;
+}
+
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 3vmin;
+    -webkit-animation:Border 5s infinite alternate;
+}
+
+.sub{
+    border: 1px solid white;
+    margin-top: 3px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.check{
+    cursor: pointer;
+}
